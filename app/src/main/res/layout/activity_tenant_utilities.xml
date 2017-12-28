@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tenant_utilities_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/utilities"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="27sp"
+        android:fontFamily="sans-serif-thin"/>
+
+    <LinearLayout
+        android:id="@+id/tenant_utilities_underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@color/colorAccentBlue"
+        android:layout_below="@id/tenant_utilities_title"/>
+
+    <RelativeLayout
+        android:id="@+id/input_utility_bill_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:background="@drawable/bill_input_box"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tenant_utilities_underline">
+
+        <TextView
+            android:id="@+id/text_choose_tenant_to_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/choose_tenant_to_bill"
+            android:textColor="@color/colorDarkBlue"/>
+
+        <Spinner
+            android:id="@+id/spinner_tenant_utilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/text_choose_tenant_to_bill" />
+
+        <Spinner
+            android:id="@+id/spinner_tenant_utility_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/input_utility_bill_amount_wrapper"
+            android:layout_below="@id/spinner_tenant_utilities"
+            android:layout_marginTop="25dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_utility_bill_amount_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner_tenant_utilities"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/input_utility_bill_amount"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_utility_message_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_utility_bill_amount_wrapper">
+
+            <EditText
+                android:id="@+id/input_utility_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_message"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_choose_utility_due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/date_button"
+            android:text="@string/choose_due_date"
+            android:textColor="@color/colorSalmon"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/input_utility_message_wrapper"/>
+
+        <Button
+            android:id="@+id/button_send_utility_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_bill_button"
+            android:text="@string/submit"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/input_utility_message_wrapper" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/utility_bill_history_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/utility_bill_history"
+        android:textSize="20sp"
+        android:textColor="@color/colorDarkBlue"
+        android:fontFamily="sans-serif-thin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/input_utility_bill_box"/>
+
+    <ListView
+        android:id="@+id/listivew_tenant_utility_bill_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@id/utility_bill_history_title"
+        android:divider="@color/colorAccentBlue"
+        android:dividerHeight="1dp"/>
+
+</RelativeLayout>

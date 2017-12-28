@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.brett.landlord_tenant.MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/welcome_message"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="NAME"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/welcome_message"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:text="DATE"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message" />
+
+    <Button
+        android:id="@+id/welcome_button_maintenance"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:padding="5dp"
+        android:background="@drawable/submit_bill_button"
+        android:drawableTop="@drawable/button_maintenance"
+        android:onClick="maintenance"
+        android:text="@string/maintenance"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/welcome_button_contact"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@id/welcome_button_message"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+
+    <Button
+        android:id="@+id/welcome_button_message"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/submit_bill_button"
+        android:drawableTop="@android:drawable/ic_menu_send"
+        android:onClick="messages"
+        android:text="@string/welcome_messageComplaint"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/welcome_button_utilities"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_button_maintenance"
+        app:layout_constraintBottom_toTopOf="@id/welcome_button_bill"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/welcome_button_bill"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/submit_bill_button"
+        android:drawableTop="@drawable/button_rent"
+        android:onClick="rent"
+        android:text="@string/bills"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/welcome_button_lease"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_button_message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/welcome_button_contact"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="8dp"
+        android:padding="5dp"
+        android:background="@drawable/submit_bill_button"
+        android:drawableTop="@drawable/ic_action_name"
+        android:onClick="contacts"
+        android:text="@string/welcome_contact"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/welcome_button_maintenance"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@id/welcome_button_utilities"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/welcome_button_utilities"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@drawable/submit_bill_button"
+        android:drawableTop="@drawable/button_utilities"
+        android:onClick="utilities"
+        android:text="@string/welcome_utilities"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/welcome_button_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_button_contact"
+        app:layout_constraintBottom_toTopOf="@id/welcome_button_lease"/>
+
+    <Button
+        android:id="@+id/welcome_button_lease"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/submit_bill_button"
+        android:drawableTop="@drawable/button_lease"
+        android:onClick="lease"
+        android:text="@string/welcome_lease"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/welcome_button_bill"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_button_utilities"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_message"-->
+        <!--android:layout_width="130dp"-->
+        <!--android:layout_height="52dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/image_maintenance"-->
+        <!--app:srcCompat="@android:drawable/ic_menu_send" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_maintenance"-->
+        <!--android:layout_width="127dp"-->
+        <!--android:layout_height="58dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView3"-->
+        <!--app:srcCompat="@drawable/button_maintenance" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_rent"-->
+        <!--android:layout_width="129dp"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/image_message"-->
+        <!--app:srcCompat="@drawable/button_rent" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_contact"-->
+        <!--android:layout_width="95dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView3"-->
+        <!--app:srcCompat="@drawable/ic_action_name" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_utilities"-->
+        <!--android:layout_width="95dp"-->
+        <!--android:layout_height="51dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/image_contact"-->
+        <!--app:srcCompat="@drawable/button_utilities" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_lease"-->
+        <!--android:layout_width="96dp"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/image_utilities"-->
+        <!--app:srcCompat="@drawable/button_lease" />-->
+
+</android.support.constraint.ConstraintLayout>

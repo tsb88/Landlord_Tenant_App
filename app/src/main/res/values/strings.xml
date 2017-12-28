@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Landlord_Tenant</string>
+    <string name="bill_tenants">Bill Tenants</string>
+    <string name="bill_history">Bill History</string>
+    <string name="bills">Bills</string>
+    <string name="choose_tenant_to_bill">Choose Tenant to Bill:</string>
+    <string name="enter_amount">Enter Amount:</string>
+    <string name="choose_due_date">Choose Due Date</string>
+    <string name="add_message">Add Message:</string>
+    <string name="submit">Submit</string>
+    <string name="paid">PAID</string>
+    <string name="unpaid">UNPAID</string>
+    <string name="mark_paid">Mark Paid</string>
+    <string name="login_welcome_message">Welcome to the Landlord Tenant Communication App!</string>
+    <string name="login_message">Please login:</string>
+    <string name="login_username_hint">Enter Username</string>
+    <string name="login_password_hint">Enter Password</string>
+    <string name="login_account_create_message">If you do not have an account, please make one:</string>
+    <string name="login_account_create_button">Create Account</string>
+    <string name="login_button">Login</string>
+    <string name="account_message">Select account type and input account credentials:</string>
+    <string name="account_password_confirm">Confirm Password</string>
+    <string name="account_email_hint">Enter email</string>
+    <string name="account_phone_hint">Enter phone number</string>
+    <string name="account_button">Create Account</string>
+    <string name="account_landlord_checkbox">Landlord</string>
+    <string name="account_tenant_checkbox">Tenant</string>
+    <string name="account_first_hint">First Name</string>
+    <string name="account_last_hint">Last Name</string>
+    <string name="welcome_message">Welcome,</string>
+    <string name="welcome_maintenance">Maintenance Request</string>
+    <string name="welcome_maintenance_landlord">Maintenance Requests</string>
+    <string name="welcome_utilities">Utilities</string>
+    <string name="welcome_lease">Lease</string>
+    <string name="welcome_messageComplaint">Messages</string>
+    <string name="welcome_bill">Rent</string>
+    <string name="welcome_contact">Contacts</string>
+    <string name="maintenance_welcome">Maintenance Request</string>
+    <string name="maintenance_title">Enter a title</string>
+    <string name="maintenance_description">Enter a description of the request</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="maintenance_button">Send request</string>
+    <string name="maintenance_list">Current Requests:</string>
+    <string name="message_welcome">Send a Message</string>
+    <string name="message_title">Enter message</string>
+    <string name="message_button">Send message</string>
+    <string name="message_list">Messages:</string>
+    <string name="open_venmo">Open Venmo</string>
+    <string name="contact_welcome">Contacts:</string>
+    <string name="contact_message">Set your info visible to other tenants:</string>
+    <string name="contact_buttonOn">Visible</string>
+    <string name="contact_buttonOff">Not Visible</string>
+    <string name="preference_file_key">preferences</string>
+    <string name="rent_title">Rent Records:</string>
+    <string name="utilities_title">Utilities Records:</string>
+    <string name="lease_checkbox">I have read and understand the terms of the lease</string>
+    <string name="lease_prompt">Electronic Signature</string>
+    <string name="lease_button">Go to sign</string>
+
+    <string name="lease_checkbox_read">I have received a copy of the lease</string>
+    <string name="lease_landlord_title">Signatures submitted:</string>
+    <string name="lease_landlord_button">Remove all signatures</string>
+    <string name="lease_button_save">Submit Signature</string>
+    <string name="lease_button_clear">Clear Signature</string>
+
+  <string name="utilities">Utilities</string>
+    <string name="utility_bill_history">Sent Utility Bills</string>
+
+    <string-array name="utility_types">
+        <item>Water</item>
+        <item>Electric</item>
+        <item>Gas</item>
+        <item>Cable (TV/Wifi)</item>
+        <item>Other</item>
+    </string-array>
+</resources>

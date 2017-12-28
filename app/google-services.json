@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "569005991610",
+    "firebase_url": "https://landlord-tenant.firebaseio.com",
+    "project_id": "landlord-tenant",
+    "storage_bucket": "landlord-tenant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569005991610:android:c83569ad5bef6c53",
+        "android_client_info": {
+          "package_name": "com.example.brett.landlord_tenant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569005991610-fmagh08mg28acduvgogt89ugkefsul4j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.brett.landlord_tenant",
+            "certificate_hash": "c485b33bdd9d32ccd6f5755c68a1c97d128c6ef6"
+          }
+        },
+        {
+          "client_id": "569005991610-g84vp9nbs9b046h1fhj471uqin504251.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.brett.landlord_tenant",
+            "certificate_hash": "4a201e76ee9a51b40179d4021a5a4ddfeb1861ce"
+          }
+        },
+        {
+          "client_id": "569005991610-ghlu33t1v2jofeouj4j7j3i1nfiu1h3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcx9V24SSn0nbRYEQfaLe-H09SVD_gUiM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569005991610-ghlu33t1v2jofeouj4j7j3i1nfiu1h3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

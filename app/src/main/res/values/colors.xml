@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A9BCD0</color>
+    <color name="colorPrimaryDark">#373F51</color>
+    <color name="colorTransparentPrimaryDark">#4D373F51</color>
+    <color name="colorAccent">#58A4B0</color>
+    <color name="colorTransparentAccent">#4D58A4B0</color>
+    <color name="colorPaleGrey">#D8DBE2</color>
+    <color name="colorSalmon">#DAA49A</color>
+    <color name="colorPaleGreen">#79c879</color>
+    <color name="colorRed">#ff4c4c</color>
+    <color name="colorControlActivated">#58A4B0</color>
+    <color name="colorControlNormal">#DAA49A</color>
+
+    <color name="colorDarkBlue">#373F51</color>
+    <color name="colorLightBlue">#A9BCD0</color>
+    <color name="colorAccentBlue">#58A4B0</color>
+
+</resources>
